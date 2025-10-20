@@ -51,23 +51,33 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #e10000;
-    color: #ff0000;
+    background: #333;
+    color: #fff;
     padding: 15px 20px;
-    border-radius: 8px;
+    border-radius: 0.5px;
 }
 header h1{
     font-size: 1.5rem;
 }
 
 nav a{
-    color: #000000;
+    color: #fafafa;
     text-decoration: none;
     margin-left: 15px;
-    font-weight: bold;
+    font-weight: semi-bold;
 
 }
 
 nav a:hover{
     text-decoration: underline;
+}
+footer{
+    background: #333;
+    color:rgb(37, 36, 36);
+    text-align: center;
+    padding:15px 0 ;
+    border-radius: 8px;
+    margin-top:20px;
+    font-size:0.9rem;
+
 }
