@@ -37,3 +37,13 @@ main{
     padding: 7px;
     border-radius: 20px;
 }
+@media (max-width: 768px){
+    main{
+        flex-direction: column;
+    }
+}
+
+.content.sidebar{
+    flex: none;
+    width: 100%;
+}
