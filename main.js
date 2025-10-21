@@ -1,0 +1,1 @@
+confirm("you go to home page?");
