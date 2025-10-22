@@ -1,10 +1,13 @@
-var Onecl;
-function Oneclil() {
-   Onecl+=1;
-   
-   return Onecl;
-}
+const form = document.getElementById('survey-form');
+const result = document.getElementById('result');
 
-function join() {
-   alert("Ты нажал на кнопку " + Onecl + " раз(а)");
-    }
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  const selected = form.querySelector('input[name="q1"]:checked');
+  if (selected) {
+    result.textContent = `Ты выбрал: ${selected.value}`;
+  } else {
+    result.textContent = 'Выбери вариант перед отправкой!';
+  }
+});

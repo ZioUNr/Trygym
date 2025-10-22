@@ -1,58 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
+  <header>
     <nav>
-        <a href="link">Глава 1 </a>
-        <a href="link">Глава 2 </a>
-        <a href="link">Глава 3 </a>
-    </nav> 
-    </header>
+      <a href="#">Глава 1</a>
+      <a href="#">Глава 2</a>
+      <a href="#">Глава 3</a>
+    </nav>
+  </header>
 
-   <main>
-        <section class="content">
-            <H3>Ваше мнение важно!</H3>
-            <p>Выберите варианты:</p>
-            <label > <input type="radio" name="q1" value="1">Да</label>
-           <br> <label > <input type="radio" name="q1" value="2">Нет</label>
-            <br><label > <input type="radio" name="q1" value="3">Не знаю</label>
-            <br>
-            <button type="submit">Отправить </button>
-        </section>
-        
-        
-        <section class="content">
-            <h2>Опрос ДНЯ :]</h2>
-            <div class="question">
-                <p>Какой язык программировние тебе ближе?</p>
-                <div class="options">
-                    <button inputmode="radio">JS</button>
-                    <button>Python</button>
-                    <button>Java</button>
-                    <button>C++</button>
+  <main>
+    <section class="content">
+      <h3>Ваше мнение важно!</h3>
+      <p>Выберите вариант:</p>
 
-                </div>
-            </div>
+      <form id="survey-form">
+        <label><input type="radio" name="q1" value="Да"> Да</label><br>
+        <label><input type="radio" name="q1" value="Нет"> Нет</label><br>
+        <label><input type="radio" name="q1" value="Не знаю"> Не знаю</label><br>
+        <button type="submit">Отправить</button>
+      </form>
 
-        </section>
-        
-        
-        
-        <aside class="sidebar">
-            <H2>Боковая панель</H2>
-            <p>Flexbox (Flexible Box Layout) — это модель компоновки в CSS, предназначенная для упрощения создания адаптивных макетов. Она позволяет легко выравнивать и распределять пространство между элементами внутри контейнера, даже когда их размер неизвестен или динамичен.</p>
-        </aside>
-    </main>
-    <footer>
-        <p>© 2025 Мой сайт</p>
-    </footer>
-   <script src="main.js"></script>
-    
-   </html>
+      <p id="result"></p>
+    </section>
+
+    <section class="content">
+      <h2>Опрос дня :]</h2>
+      <div class="question">
+        <p>Какой язык программирования тебе ближе?</p>
+        <div class="options">
+          <button>JS</button>
+          <button>Python</button>
+          <button>Java</button>
+          <button>C++</button>
+        </div>
+      </div>
+    </section>
+
+    <aside class="sidebar">
+      <h2>Боковая панель</h2>
+      <p>Flexbox (Flexible Box Layout) — это модель компоновки в CSS, которая помогает выравнивать и распределять элементы в контейнере, даже если их размеры разные или динамические.</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>© 2025 Мой сайт</p>
+  </footer>
+
+  <script src="main.js"></script>
 </body>
+</html>
